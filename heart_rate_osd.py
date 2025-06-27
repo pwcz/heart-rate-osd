@@ -102,7 +102,8 @@ if __name__ == "__main__":
 
     fit_files = glob.glob(os.path.join("data", '*.fit'))
     movie_files = glob.glob(os.path.join("data", '*.MOV'))
-    assert len(fit_files) == 1 and len(movie_files) == 1
+    if not (len(fit_files) == 1 and len(movie_files) == 1):
+        raise RuntimeError("The script expects exactly one .MOV and one .fit file in the data/ folder.")
 
     if args.preview:
         check_osd(movie_files[0])

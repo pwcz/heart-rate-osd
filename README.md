@@ -40,7 +40,7 @@ You will also need:
 ### ▶️ Generate video with OSD:
 
 ```bash
-python fpv_osd.py
+python heart_rate_osd.py
 ```
 
 The result will be saved as `heart_rate_osd.MOV`.
@@ -50,7 +50,7 @@ The result will be saved as `heart_rate_osd.MOV`.
 To preview OSD rendering before generating the full video:
 
 ```bash
-python fpv_osd.py --preview
+python heart_rate_osd.py --preview
 ```
 
 It will display the first frame with a sample heart rate and save it as `test_frame.png`.
@@ -78,7 +78,7 @@ Place your files like this:
 
 ```
 project/
-├── fpv_osd.py
+├── heart_rate_osd.py
 ├── fit_reader.py
 ├── requirements.txt
 ├── data/
@@ -95,12 +95,12 @@ project/
 ### Generate full video with OSD:
 
 ```bash
-python fpv_osd.py
+python heart_rate_osd.py
 ```
 
 ### Preview just one frame:
 
 ```bash
-python fpv_osd.py --preview
+python heart_rate_osd.py --preview
 ```
 
